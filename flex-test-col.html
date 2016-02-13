@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+.grid{
+    border: 1px solid #e7e7e7;
+}
+
+.grid-row{
+    display: flex;
+    flex-direction:column;
+}
+
+.grid-item{
+    flex:1;
+    padding: 12px;
+    margin: 1px;
+    border: 1px solid #e7e7e7;
+}
+
+@media all and (min-width: 480px){
+    .grid-row--sm{
+        flex-direction:row;
+    }
+}
+
+@media all and (min-width: 720px){
+    .grid-row--md{
+        flex-direction:row;
+    }
+}
+
+@media all and (min-width: 960px){
+    .grid-row--lg{
+        flex-direction:row;
+    }
+}
+</style>
+</head>
+<body>
+    <div class='grid'>
+        <div class='grid-row grid-row--sm'>
+            <div class='grid-item'>1</div>
+            <div class='grid-item'>2</div>
+            <div class='grid-item'>3</div>
+            <div class='grid-item'>4</div>
+        </div>
+        <div class='grid-row grid-row--md'>
+            <div class='grid-item'>1</div>
+            <div class='grid-item'>2</div>
+            <div class='grid-item'>3</div>
+            <div class='grid-item'>4</div>
+            <div class='grid-item'>5</div>
+            <div class='grid-item'>6</div>
+            <div class='grid-item'>7</div>
+            
+        </div>
+        <div class='grid-row grid-row--lg'>
+            <div class='grid-item'>1</div>
+            <div class='grid-item'>2</div>
+            <div class='grid-item'>3</div>
+        </div>
+    </div>
+</body>
+</html>
